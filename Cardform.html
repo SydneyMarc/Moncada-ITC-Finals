@@ -1,0 +1,259 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+  background-image: url("Haven.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+color: white;
+}
+h2 {border-style: solid;}
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-image: url("Icebox.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #800000;
+  color: White;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #808080;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+.rainbow {
+  text-align: center;
+  font-size: 50px;
+  font-family: Times New Roman;
+  letter-spacing: 5px;
+  animation: colorRotate 6s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
+.cmdbutton2 {
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 20px; 
+  text-align: center;
+  text-decoration: none;
+  font-family: arial;
+  display: inline-block;
+  font-size: 16 px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.cmdbutton2 {border-radius: 25px;}
+.cmdbutton2:hover 
+{
+background-color: white;
+  border: none;
+  color: black;
+  padding: 20px; 
+  text-align: center;
+  text-decoration: none;
+  font-family: arial;
+  display: inline-block;
+  font-size: 16 px;
+  margin: 4px 2px;
+  cursor: pointer;
+animation: colorRotate 1s linear 0s infinite;
+}
+.cmdbutton1 {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 20px; 
+  text-align: center;
+  text-decoration: none;
+  font-family: arial;
+  display: inline-block;
+  font-size: 16 px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.cmdbutton1 {border-radius: 25px;}
+
+.topnav {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+</style>
+</head>
+<body>
+<script language="JavaScript">
+alert('Enter Card Information');
+</script>
+<div class="rainbow">
+<h2>ValoShop</h2>
+</div>
+<div class="topnav">
+<a href="index.html"class="cmdbutton1">Back</a>
+</div>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      
+        
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Sydney Marc Moncada">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1234-1234-1234-1234">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="December">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2021">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="247">
+              </div>
+            </div>
+          
+          
+        
+        
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+  
+
+</body>
+</html>
